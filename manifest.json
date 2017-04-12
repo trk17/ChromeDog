@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dog Picture",
+  "description": "This extension shows a replaces randomly selected photos on a webpage with pictures of dogs",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://*/*"]
+  }]
+}
